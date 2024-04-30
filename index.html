@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Card Demo</title>
+    <link href="./src/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>DeckOfCards.js High Card Browser Demo</h1>
+    <p>
+      In this demo, you must choose from the left, middle, or right piles of cards. The computer will then choose one of
+      the remaining piles. Whichever of you has the highest-ranked card at the top of your pile wins! (Tied games result
+      in a win for the player.)
+    </p>
+    <section id="cardPiles" class="card-piles">
+      <div id="pile1" class="card-pile">
+        Pile 1
+        <button id="choosePile1">Choose Pile 1</button>
+      </div>
+      <div id="pile2" class="card-pile">
+        Pile 2
+        <button id="choosePile2">Choose Pile 2</button>
+      </div>
+      <div id="pile3" class="card-pile">
+        Pile 3
+        <button id="choosePile3">Choose Pile 3</button>
+      </div>
+    </section>
+    <section id="choicesArea" class="choices-area hidden">
+      <div id="playerChoice">
+        <h2>Player Card</h2>
+        <p>
+          You chose Pile Number
+          <span id="playerPile"></span>
+        </p>
+        <p>
+          Your card is
+          <span id="playerCard"></span>
+        </p>
+      </div>
+      <div id="computerChoice">
+        <h2>Computer Card</h2>
+        <p>
+          Computer chose Pile Number
+          <span id="computerPile"></span>
+        </p>
+        <p>
+          Computer's card is
+          <span id="computerCard"></span>
+        </p>
+      </div>
+    </section>
+    <section id="resultsArea" class="results-area hidden">
+      <div id="gameResults">
+        <h2>Results</h2>
+        <p>Your card is <span id="playerHigherOrLower"></span> than the computer's card.</p>
+        <p>You <span id="playerWinOrLose"></span>!</p>
+      </div>
+    </section>
+    <script src="bundle.js" type="text/javascript"></script>
+  </body>
+</html>

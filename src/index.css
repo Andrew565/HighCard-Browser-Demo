@@ -1,0 +1,26 @@
+.card-piles {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-pile {
+  padding: 2em;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pile > * {
+  margin-top: 6px;
+}
+
+.choices-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hidden {
+  display: none;
+}
